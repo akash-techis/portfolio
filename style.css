@@ -1,85 +1,197 @@
-body {
-  font-family: "monospace", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+header nav .left-nav {
+    width: 30%;
+
+}
+header nav .left-nav h1 {
+    font-size: 2rem;
+}
+header nav .left-nav h1 span {
+    font-size: 2rem;
+    color: #00ABAE;
+}
+header nav .right-nav{
+     width: 70%;
+     display: flex;
+     justify-content: flex-end;
+     
+     gap: 1rem;
+}
+header nav .right-nav a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 3%;
+}
+main .main-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 5%;
+    justify-content: center;
+}
+main .main-left h1 {
+    font-size: 1.8rem;
+    padding-bottom: 8%;
+}
+main .main-left h1 span {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+main .main-left h2 {
+    font-size: 1.6rem;
+
+}
+main .main-left .buttons input {
+    padding: 0.3rem 0.5rem;
+    background-color: #00ABAE;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+
+}
+main .main-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-.font-primary {
-  color: #00abae;
+main .main-right img{
+    width: 100%;
+}
+.mid h2 {
+    padding: 2% 0 4% 4%;
+    font-size: 1.7rem;
+}
+.mid .mid-container {
+    display: flex;
+    gap: 1rem;
+    padding: 4% ;
+}
+.mid .mid-container .mid-flex {
+    line-height: 1.5rem;
+
+}
+.mid .mid-container .mid-flex h1 {
+    font-size: 1.3rem;
+}
+.mid .mid-container .mid-flex p {
+    font-size: 1rem;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    place-items: center;
+}
+@media screen and (max-width: 500px){
+    .skills {
+        grid-template-columns: repeat(3,1fr);
+    }
+    main .main-left h2 {
+        font-size: 1rem;
+    }
+    .projects .project {
+        display: grid;
+        place-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.skills img {
+    width: 77%;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 2%;
+
+}
+.projects h1 {
+    font-size: 1.5rem;
+}
+.projects .project {
+    display: flex;
+
+}
+.projects .project .proj-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5rem;
+}
+.projects .project .proj-left .buttons input{
+    padding: 0.3rem 0.5rem;
+    background-color: #00ABAE;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+
+}
+.projects .project .proj-right {
+    width: 50%;
+}
+.projects .project .proj-right .video-container {
+    width: 100%;
+}
+.projects .project .proj-right .video-container img {
+    width: 100%;
+}
+.projects .bottom {
+    text-align: center;
+    padding: 6% 0;
+    line-height: 2rem;
+}
+.projects .bottom h2 {
+    font-size: 2rem;
+}
+.projects .bottom p {
+    font-size: 1rem;
+    color: gray;
+}
+footer {
+    border-top: 1px solid gray;
+    text-align: center;
+    color: lightgray;
+    padding: 3% 0 2% 0;
 }
 
-.title-icon {
-  font-size: 20px;
-  font-weight: bold;
-}
 
-p {
-  font-size: 14px;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 23px;
-  margin-bottom: 20px;
-}
-
-a .font-black {
-  color: #000;
-}
-
-#about {
-  margin: 60px auto;
-  max-width: 400px;
-  text-align: center;
-}
-
-#about img {
-  border-radius: 50%;
-  width: 120px;
-  margin-bottom: 10px;
-}
-
-#about .name {
-  font-size: 19px;
-}
-
-#about .vocation {
-  font-size: 17px;
-  color: #a8a8ab;
-  margin-bottom: 10px;
-}
-
-#about .skills {
-  font-size: 15px;
-  color: #00abae;
-  margin-bottom: 10px;
-}
-
-#about .email {
-  margin-top: 14px;
-  font-size: 14px;
-}
-
-#about .icons {
-  margin-top: 20px;
-  font-size: 30px;
-}
-
-#about .icons a {
-  color: #000;
-}
-
-.ms-10 {
-  margin-left: 15px;
-}
-
-#project {
-  margin: 48px auto;
-  width: 80%;
-}
-
-#project h2 {
-  text-align: center;
-}
-
-#project .card-title {
-  font-weight: bold;
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column-reverse;
+        place-items: center;
+    }
+    .mid .mid-container {
+        flex-direction: column;
+        place-items: center;
+    }
+    .projects {
+        padding-top: 15%;
+    }
+    main .main-left .buttons {
+        display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+    .projects .project .proj-left .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
