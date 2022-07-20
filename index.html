@@ -1,100 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-        <div class="container">
-          <a class="navbar-brand title-icon" href="https://portfolio-aka.herokuapp.com/" target="_blank"><span class="font-primary">P</span>ortfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class=" collapse navbar-collapse" id="navbarToggler"></div>
-            <ul class="navbar-nav ms-auto mb-2 ">
-              <li class="nav-item">
-                <a class="nav-link font-black" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-black" href="#project">Projects</a>
-              </li>
-              
-            </ul>
-            
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <h1><span>P</span>ortfolio</h1>
+        </div>
+        <div class="right-nav">
+          <a href="">about</a>
+          <a href="">project</a>
+          <a href="">contact</a>
         </div>
       </nav>
-      <div id="about">
-          <h2><span class="font-primary">A</span>bout</h2>
-          <img src="img/1632977874586.jpg">
-          <div class="name">Akash Pradeep</div>
-          <div class="vocation">Web Application Developer</div>
-          <div class="skills">HTML / CSS / Javascript / React.js / Redux / Python / Django / Express.js / AWS(Basics) / Docker(Basics)</div>
-          <p>“I’m an innovative software engineer with 3 years of experience managing all aspects of the development process for small to medium-sized companies.”</p>
-          <div class="email">akash@techis.io</div>
-          <div class="icons">
-              <a href="https://github.com/akash-techis/portfolio/" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://portfolio-aka.herokuapp.com/" target="_blank"><i class="bi bi-linkedin ms-10"></i></a>
+      <main>
+        <div class="main-left">
+          <h1>Hi, my name is <span>Nathalia</span></h1>
+          <h2>
+            An inovative Web Developer <br />with a marketing background <br />
+            specializing in Github and Webflow
+          </h2>
+          <div class="buttons">
+            <input type="button" value="GITHUB" />
+            <input type="button" value="LINKEDIN" />
           </div>
-
+        </div>
+        <div class="main-right">
+          <img src="/img/profile-img.png" alt="user-img" />
+        </div>
+      </main>
+      <section class="mid">
+        <h2>What I do</h2>
+        <div class="mid-container">
+          <div class="mid-flex">
+            <h1>Web Development</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              distinctio amet tempore necessitatibus reprehenderit eos provident
+              dolorum ratione minus. Iste molestias cupiditate distinctio sunt
+              earum omnis dignissimos nulla deserunt assumenda?
+            </p>
+          </div>
+          <div class="mid-flex">
+            <h1>Web Development</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              distinctio amet tempore necessitatibus reprehenderit eos provident
+              dolorum ratione minus. Iste molestias cupiditate distinctio sunt
+              earum omnis dignissimos nulla deserunt assumenda?
+            </p>
+          </div>
+          <div class="mid-flex">
+            <h1>Web Development</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              distinctio amet tempore necessitatibus reprehenderit eos provident
+              dolorum ratione minus. Iste molestias cupiditate distinctio sunt
+              earum omnis dignissimos nulla deserunt assumenda?
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="skills">
+        <img src="/img/amazon.png" alt="" />
+        <img src="/img/css.png" alt="" />
+        <img src="/img/django.png" alt="" />
+        <img src="/img/docker.png" alt="" />
+        <img src="/img/express.png" alt="" />
+        <img src="/img/html.png" alt="" />
+        <img src="/img/js.png" alt="" />
+        <img src="/img/redux.png" alt="" />
+        <img src="/img/react.png" alt="" />
       </div>
 
-      <div id="project">
-            <h2><span class="font-primary">P</span>roject</h2>
-
-            <div class="card mb-3" >
-                <div class="row ">
-                  <div class="col-md-4">
-                    <img src="img/project-twitter.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Twitter Clone</h5>
-                      <p class="card-text">This is a twitter based project made using Django </p>
-                      <p class="card-text"><small class="text-muted">
-                    Test Login Account <br>
-                    Email : example@gmail.com<br>
-                    Password : 4321
-                </small></p>
-                <a href="https://portfolio-aka.herokuapp.com/" target="_blank" class="btn btn-secondary">Website Link</a>
-                <a href="https://github.com/akash-techis/portfolio" target="_blank" class="btn btn-secondary">Github Link</a>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" >
-                <div class="row ">
-                  <div class="col-md-4">
-                    <img src="img/project-netflix.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Netflix Clone</h5>
-                      <p class="card-text">This is a Netflix based project made using HTML / CSS / JS</p>
-                      <p class="card-text"><small class="text-muted">
-                    Test Login Account <br>
-                    Email : example@gmail.com<br>
-                    Password : 4321
-                </small></p>
-                <a href="https://portfolio-aka.herokuapp.com/" target="_blank" class="btn btn-secondary">Website Link</a>
-                <a href="https://github.com/akash-techis/portfolio" target="_blank" class="btn btn-secondary">Github Link</a>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-      </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</body>
+      <section class="projects">
+        <h1>What I do</h1>
+        <div class="project">
+          <div class="proj-left">
+            <h2>Twitter Clone</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              asperiores delectus dicta, inventore dolor minima et qui aliquam
+              vel in suscipit consectetur necessitatibus praesentium. Laboriosam
+              labore dolorem repudiandae vero architecto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              nam illum iure quis ex debitis repellat sunt dolore distinctio
+              labore at, neque repudiandae magni necessitatibus cupiditate
+              quibusdam delectus reiciendis temporibus.
+            </p>
+            <div class="buttons">
+              <input type="button" value="Website Link" />
+              <input type="button" value="Github Link" />
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="video-container">
+              <img src="/img/image 47.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="proj-left">
+            <h2>Twitter Clone</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              asperiores delectus dicta, inventore dolor minima et qui aliquam
+              vel in suscipit consectetur necessitatibus praesentium. Laboriosam
+              labore dolorem repudiandae vero architecto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              nam illum iure quis ex debitis repellat sunt dolore distinctio
+              labore at, neque repudiandae magni necessitatibus cupiditate
+              quibusdam delectus reiciendis temporibus.
+            </p>
+            <div class="buttons">
+              <input type="button" value="Website Link" />
+              <input type="button" value="Github Link" />
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="video-container">
+              <img src="/img/image 47.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="proj-left">
+            <h2>Twitter Clone</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              asperiores delectus dicta, inventore dolor minima et qui aliquam
+              vel in suscipit consectetur necessitatibus praesentium. Laboriosam
+              labore dolorem repudiandae vero architecto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              nam illum iure quis ex debitis repellat sunt dolore distinctio
+              labore at, neque repudiandae magni necessitatibus cupiditate
+              quibusdam delectus reiciendis temporibus.
+            </p>
+            <div class="buttons">
+              <input type="button" value="Website Link" />
+              <input type="button" value="Github Link" />
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="video-container">
+              <img src="/img/image 47.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+            <h2>Hope you found my portfolio interesting!</h2>
+            <p>you can reach me at : natalia@gmail.com</p>
+        </div>
+      </section>
+    </header>
+    <footer>
+        <div class="foot">
+            <div class="img-container">
+                <img src="/img/linkedin.png" alt="">
+                <img src="/img/Group 301.png" alt="">
+            </div>
+            <p>Natalia Portfolio: 2022 All Rights Reserved</p>
+        </div>
+    </footer>
+  </body>
 </html>
